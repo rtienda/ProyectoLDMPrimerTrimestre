@@ -9,9 +9,11 @@
     <title>ProyectoPrimerTrimestre</title> 
     <style>
         #PhotoBay {
+            object-fit: cover;
             width: 50vw;
             height: 50vh;
             display: block;
+            
         }
 
         #Photo {
@@ -19,12 +21,14 @@
             height: 100%;
             object-fit: cover;
         }
-
+        
         #PictureBay{
+         
+            
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            height: 100%;
         }
 
         @media screen and (orientation:landscape) {
@@ -44,7 +48,7 @@
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
 
     <div id="#PictureBay">
         <picture id="#PhotoBay">
