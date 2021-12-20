@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+<head>
+
+    <title>ProyectoPrimerTrimestre</title> 
+    <style>
+        #PhotoBay {
+            object-fit: cover;
+            width: 50vw;
+            height: 50vh;
+            display: block;
+            
+        }
+
+        #Photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #PictureBay{
+         
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        @media screen and (orientation:landscape) {
+            #PhotoBay {
+                max-width: 1200px;
+                max-height: 800px; 
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+            #PhotoBay {
+                 max-width: 600px;
+                max-height: 900px; 
+            }
+        }
+    </style>
+
+</head>
+
+<body style="overflow: hidden;">
+
+    <div id="#PictureBay">
+        <picture id="#PhotoBay">
+            <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Genshin-Grande-Horizontal.heic"type="image/heic">
+                <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Genshin-Grande-Horizontal.webp"type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Genshin-Grande-Horizontal.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./Genshin-Grande-Vertical.heic" type="image/heic">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./Genshin-Grande-Vertical.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width:1200px)" srcset="./Genshin-Grande-Vertical.jpg" type="image/jpg">
+         
+               
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./Genshin-Peque-Horizontal.heic"type="image/heic">
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./Genshin-Peque-Horizontal.webp" type="image/webp">
+                <source media="(orientation: landscape) and (min-width: 800px)" srcset="./Genshin-Peque-Horizontal.jpg" type="image/jpeg">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./Genshin-Peque-Vertical.heic" type="image/heic">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./Genshin-Peque-Vertical.webp" type="image/webp">
+                <source media="(orientation: portrait) and (min-width: 600px)" srcset="./Genshin-Peque-Vertical.jpg" type="image/jpg">
+        
+         
+        
+                <img id="Photo" alt="Genshin_Impact" title="Sorrow" src="./Genshin-Grande-Vertical.jpg" />
+        </picture>
+    </div>
+
+</body>
+
+
+</html>
